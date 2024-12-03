@@ -11,6 +11,7 @@ public:
 	int Getsy();
 	int Getcote();
 	void Deplacer(char, int);
+	void Deplacer(int, int);
 
 private:
 	int sx;

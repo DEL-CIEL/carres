@@ -12,6 +12,6 @@ int main()
 	carre1.Afficher();
 	cout << endl;
 
-	carre1.Deplacer('s', 5);
+	carre1.Deplacer(5, 5);
 	carre1.Afficher();
 }
