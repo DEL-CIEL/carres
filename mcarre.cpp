@@ -5,13 +5,13 @@ using namespace std;
 
 int main()
 {
-	CCarre carre1;
-	carre1.Setcote(5);
-	carre1.Setsx(2);
-	carre1.Setsy(3);
-	carre1.Afficher();
-	cout << endl;
+	CCarre carre[4];
 
-	carre1.Deplacer(5, 5);
-	carre1.Afficher();
+	for (size_t i = 0; i < 4; i++)
+	{
+		carre[i].Setsx(rand() % 10);
+		carre[i].Setsy(rand() % 10);
+		carre[i].Setcote(rand() % 10);
+		carre[i].Afficher();
+	}
 }
