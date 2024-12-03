@@ -23,3 +23,18 @@ void CCarre::Afficher()
 	cout << "Position x: " << this->sx << " \t Position y: " << this->sy << " \t Cote: " << this->cote << endl;
 }
 
+int CCarre::Getsx()
+{
+	return this->sx;
+}
+
+int CCarre::Getsy()
+{
+	return this->sy;
+}
+
+int CCarre::Getcote()
+{
+	return this->cote;
+}
+

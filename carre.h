@@ -7,6 +7,9 @@ public:
 	void Setsy(int);
 	void Setcote(int);
 	void Afficher();
+	int Getsx();
+	int Getsy();
+	int Getcote();
 
 private:
 	int sx;
