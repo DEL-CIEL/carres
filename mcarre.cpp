@@ -12,7 +12,6 @@ int main()
 	carre1.Afficher();
 	cout << endl;
 
-	cout << carre1.Getcote() << endl;
-	cout << carre1.Getsx() << endl;
-	cout << carre1.Getsy() << endl;
+	carre1.Deplacer('s', 5);
+	carre1.Afficher();
 }

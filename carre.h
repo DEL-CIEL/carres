@@ -10,6 +10,7 @@ public:
 	int Getsx();
 	int Getsy();
 	int Getcote();
+	void Deplacer(char, int);
 
 private:
 	int sx;

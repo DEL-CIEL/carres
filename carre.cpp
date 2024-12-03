@@ -38,3 +38,28 @@ int CCarre::Getcote()
 	return this->cote;
 }
 
+// "Déplace" le carré sans le dessiner. Les attributs x et y  
+// sont modifiés en ajoutant ou retranchant la valeur de saut en fonction de  
+// la direction : par ex direction nord saut=2 y=y-2 
+// Entrées : 
+//  - direction : vaut 'n' si nord, 's' si sud, 'o' si ouest, 'e' si est 
+//   - saut : nombre de pixels de déplacement du carré 
+// Sortie : Aucune 
+void CCarre::Deplacer(char direction, int saut)
+{
+	switch (direction)
+	{
+	case 'n':
+		this->sy -= saut;
+		break;
+	case 's':
+		this->sy += saut;
+		break;
+	case 'o':
+		this->sx -= saut;
+		break;
+	case 'e':
+		this->sx += saut;
+		break;
+	}
+}
