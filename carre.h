@@ -3,6 +3,8 @@
 class CCarre
 {
 public:
+	CCarre();
+	CCarre(int, int, int);
 	void Setsx(int);
 	void Setsy(int);
 	void Setcote(int);
@@ -16,5 +18,5 @@ public:
 private:
 	int sx;
 	int sy;
-	int cote;
+	unsigned int cote;
 };

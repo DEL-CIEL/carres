@@ -3,6 +3,20 @@
 
 using namespace std;
 
+CCarre::CCarre()
+{
+	this->sx = rand() % 10;
+	this->sy = rand() % 10;
+	this->cote = rand() % 10;
+}
+
+CCarre::CCarre(int sx1, int sy1, int cote1)
+{
+	this->sx = sx1;
+	this->sy = sy1;
+	this->cote= cote1;
+}
+
 void CCarre::Setsx(int sx1)
 {
 	this->sx = sx1;
